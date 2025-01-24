@@ -1,0 +1,6 @@
+thevariable = "Josh"
+the_variable = "Josh"
+_the_variable = "Josh"
+theVariable = "Josh"
+THEVARIABLE = "Josh"
+thevariable2 = "Josh"
