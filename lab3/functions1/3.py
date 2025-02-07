@@ -4,6 +4,6 @@ def solve(numheads, numlegs):
         if (chickens * 2 + rabbits * 4) == numlegs:
             print(chickens, rabbits)
 
-numheads = int(input("Enter the amount of heads:"))
-numlegs = int(input("ENter the amount of legs:"))
+numheads = int(input("heads: "))
+numlegs = int(input("legs: "))
 solve(numheads, numlegs)

@@ -6,6 +6,6 @@ def has_33(num):
             return False
 
 
-num = list(input("Enter the array: "))
+num = list(input())
 print(has_33(num))
 

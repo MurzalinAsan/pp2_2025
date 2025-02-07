@@ -81,7 +81,7 @@ movies = [
 }
 ]
 
-user_category = str(input("Enter your category: "))
+user_category = str(input())
 category(movies, user_category)
 
 
