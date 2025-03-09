@@ -1,0 +1,4 @@
+car
+fridge
+pizza
+1
