@@ -40,5 +40,5 @@ while not done:
         func(screen, minhand, center, min_a)
         
         pygame.display.flip()
-        pygame.time.delay(1000)
+        
         
