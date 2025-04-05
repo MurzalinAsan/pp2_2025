@@ -94,6 +94,12 @@ class PLayer(pygame.sprite.Sprite):
         if self.rect.right < screen_width:
             if pressed[pygame.K_RIGHT]:
                 self.rect.move_ip(5, 0)
+        if self.rect.top > 0:
+             if pressed[pygame.K_UP]:
+                  self.rect.move_ip(0, -5)
+        if self.rect.bottom < screen_height:
+             if pressed[pygame.K_DOWN]:
+                  self.rect.move_ip(0, 5)
     
 
 PL = PLayer()
@@ -128,7 +134,7 @@ while not done:
     scores = font.render(f"Score: {money}", True, BLACK)
     screen.blit(scores, (10, 10))
 
-    game_over = font.render("GAME OVER", True, BLACK)
+    game_over = font.render(f"GAME OVER, score: {money}", True, BLACK)
     for i in all_sprites:
         screen.blit(i.image, i.rect)
         i.move()
@@ -137,7 +143,7 @@ while not done:
           
           for entity in all_sprites:
                 entity.kill() 
-          screen.blit(game_over, (50, 100))
+          screen.blit(game_over, (10, 300))
           time.sleep(2)
           
 
